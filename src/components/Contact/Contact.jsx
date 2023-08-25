@@ -1,70 +1,57 @@
-import React,{useState, useRef} from 'react'
-import emailjs from "@emailjs/browser";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, } from "react-bootstrap";
 import Button from 'react-bootstrap/Button';
+import React from 'react';
+import emailjs from 'emailjs-com'
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast } from 'react-toastify';
 import './Contact.css'
+ 
 
 const Contact = () => {
-    const form = useRef();
-    const [done, setDone] = useState(false)
-    const [notDone, setNotDone] = useState(false)
-    const [formData, setFormData] = useState({});
-
-    const handleChange = (e) => {
-        setFormData({...formData, [e.target.name] : e.target.value})
-        setDone(false)
-        setNotDone(false)
-    }
-
-    const sendEmail = (e) => {
+  function senEmail(e) {
     e.preventDefault();
-    
-    if(!formData.from_name || !formData.reply_to ||!formData.message){
-      setNotDone(true)
-    } else {
-      
-      //  Please use your own credentials from emailjs or i will recive your email
-      
-    emailjs
-      .sendForm(
-        "service_niilndo",
-        "template_6z5idye",
-        form.current,
-        "VOBt6Akm1LhI5CZG-"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          setDone(true);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-    }
-    };
-    
 
-    return(
-        <Container style={{paddingTop: '50px'}} >
-            <Row >
-            <Col md={6} className="c-left" >
-            <h1 >Get in Touch</h1>
-            <h1 className="yellow">Contact me</h1>
-            </Col>
-            <Col md={6} className="c-right">
-                <form ref={form} onSubmit={sendEmail}>
-                <input type="text" name="from_name" className="user"  placeholder="Name" onChange={handleChange}/>
-                <input type="email" name="reply_to" className="user" placeholder="Email" onChange={handleChange} />
-                <textarea name="message" className="user" placeholder="Message" onChange={handleChange} />
-                <span className='not-done' >{notDone && "Please, fill all the input field"}</span>
-                <Button type="submit" className="button" disabled={done}>Send</Button>
-                <span className='done'>{done && "Thanks for contacting me and be sure i have recieved your mail. If you are testing this functionality then i am confirming this thing working perfectly fine. If you have any serious query then i will reply. Also if you need me, you can conatct me on Linkedin."}</span>
-                </form>
-            </Col>
-            </Row>
-        </Container>
-    )
+    emailjs.sendForm('service_pouhvhu', 'template_71ad0fo', e.target, '1g7P4ZbojtR5QuV-3')
+      .then(res => {
+        console.log(res);
+        toast.success("Your message has been sent");
+      }).catch(err => console.log(err));
+
+  }
+
+
+  return (
+    <Container style={{ paddingTop: '50px' }} >
+      <Row >
+        <Col md={6} className="c-left" >
+          <h1 >Get in Touch</h1>
+          <h1 className="yellow">Contact me</h1>
+        </Col>
+        <Col md={6} className="c-right">
+          <form onSubmit={senEmail} >
+            <input name="name" type="text" id='name' className="user" placeholder="Name" />
+            <input name="user_email" type="email" id='email' className="user" placeholder="Email" />
+            <textarea name="message" id='messaage' className="user" placeholder="Message" />
+            <Button onClick={Contact} type="submit" className="button form-control btn btn-primary">Send</Button>
+            <ToastContainer
+              position="top-center"
+              autoClose={2000}
+              limit={1}
+              hideProgressBar={false}
+              newestOnTop={false}
+              closeOnClick
+              rtl={false}
+              pauseOnFocusLoss
+              draggable
+              pauseOnHover
+              theme="dark"
+            />
+          </form>
+        </Col>
+      </Row>
+    </Container>
+  )
 }
+
 
 export default Contact
