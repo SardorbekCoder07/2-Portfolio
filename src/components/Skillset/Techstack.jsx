@@ -143,6 +143,10 @@ const Techstack = () => {
         <p className="techstackP">UIkit</p>
         <SiUikit />
       </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <p className="techstackP">UIkit</p>
+        <SiUikit />
+      </Col>
     </Row>
   );
 }
