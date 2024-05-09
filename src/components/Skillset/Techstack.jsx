@@ -10,12 +10,14 @@ import {
   DiGulp
 } from "react-icons/di";
 import {
+  SiChakraui,
   SiChartdotjs,
   SiD3Dotjs,
   SiFirebase,
   SiHtml5,
   SiJquery,
   SiLeaflet,
+  SiMaterialui,
   SiNextdotjs,
   SiPassport,
   SiPug,
@@ -24,6 +26,7 @@ import {
   SiTailwindcss,
   SiThreedotjs,
   SiTypescript,
+  SiUikit,
   SiVite,
   SiWordpress
 } from "react-icons/si";
@@ -127,6 +130,18 @@ const Techstack = () => {
       <Col xs={4} md={2} className="tech-icons">
         <p className="techstackP">WordPress</p>
         <SiWordpress />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <p className="techstackP">Material UI</p>
+        <SiMaterialui />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <p className="techstackP">Chakra UI</p>
+        <SiChakraui />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <p className="techstackP">UIkit</p>
+        <SiUikit />
       </Col>
     </Row>
   );
