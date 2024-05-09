@@ -30,18 +30,13 @@ const About = () => {
               <b className="yellow"> front end  </b>developer,
               I enjoy solving new problems and constantly expanding my skills.
               <br />
-              <br />I know
-              <b className="yellow"> Javascript, </b>
-              at intermediate level, and I also have knowledge in programming languages ​​like 
-              <b className="yellow"> C++, Java, Python, etc.</b>
-              <br />
               <br />
               I have a passion for working
               with 
               <i>
                 <b className="yellow">
                   {" "}
-                  modern Javascript libraries and frameworks
+                  modern Javascript libraries and frameworks.
                 </b>
               </i>
               &nbsp; like
