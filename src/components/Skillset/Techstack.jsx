@@ -20,14 +20,14 @@ import {
   SiPassport,
   SiPug,
   SiSvelte,
+  SiSwiper,
   SiTailwindcss,
   SiThreedotjs,
   SiTypescript,
   SiVite,
   SiWordpress
 } from "react-icons/si";
-import { AiFillAccountBook } from "react-icons/ai";
-import { BsImage } from "react-icons/bs";
+import {AiOutlineMail } from "react-icons/ai";
 
 const Techstack = () => {
   return (
@@ -81,6 +81,10 @@ const Techstack = () => {
         <SiChartdotjs />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
+        <p className="techstackP">Chart JS</p>
+        <SiChartdotjs />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
         <p className="techstackP">Leaflet JS</p>
         <SiLeaflet />
       </Col>
@@ -91,6 +95,14 @@ const Techstack = () => {
       <Col xs={4} md={2} className="tech-icons">
         <p className="techstackP">Svelte JS</p>
         <SiSvelte />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <p className="techstackP">Email JS</p>
+        <AiOutlineMail />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <p className="techstackP">Swiper JS</p>
+        <SiSwiper />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <p className="techstackP">React JS</p>
@@ -115,9 +127,6 @@ const Techstack = () => {
       <Col xs={4} md={2} className="tech-icons">
         <p className="techstackP">WordPress</p>
         <SiWordpress />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        
       </Col>
     </Row>
   );
