@@ -1,5 +1,11 @@
-.techstackP{
+.techstackP {
     font-size: 1.4rem;
     text-shadow: 15px 15px 7px #7500fa;
     text-align: start;
+}
+
+.center {
+    
+    font-size: 1.4rem;
+    text-shadow: 15px 15px 7px #7500fa;
 }

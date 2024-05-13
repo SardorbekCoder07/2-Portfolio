@@ -84,10 +84,6 @@ const Techstack = () => {
         <SiChartdotjs />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <p className="techstackP">Chart JS</p>
-        <SiChartdotjs />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
         <p className="techstackP">Leaflet JS</p>
         <SiLeaflet />
       </Col>
@@ -124,7 +120,10 @@ const Techstack = () => {
         <DiGulp />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <p className="techstackP">Pug JS</p>
+        <p className=" center">Video JS</p>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <p className="techstackP ">Pug JS</p>
         <SiPug />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
@@ -138,10 +137,6 @@ const Techstack = () => {
       <Col xs={4} md={2} className="tech-icons">
         <p className="techstackP">Chakra UI</p>
         <SiChakraui />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <p className="techstackP">UIkit</p>
-        <SiUikit />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <p className="techstackP">UIkit</p>

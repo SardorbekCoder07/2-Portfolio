@@ -4,6 +4,7 @@ import {
   AiFillGithub,
   AiFillInstagram,
 } from "react-icons/ai";
+import { SiTelegram } from "react-icons/si";
 
 
 const Footer = () => {
@@ -30,6 +31,17 @@ const Footer = () => {
                   aria-label="linkedin"
                 >
                   <AiFillGithub />
+                </a>
+              </li>
+              <li className="social-icons">
+                <a
+                  href="https://t.me/Tuit_ki_student/"
+                  style={{ color: "white" }}
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  aria-label="linkedin"
+                >
+                  <SiTelegram />
                 </a>
               </li>
               <li className="social-icons">

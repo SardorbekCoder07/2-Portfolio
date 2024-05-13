@@ -6,6 +6,7 @@ import {
   AiFillGithub,
   AiFillInstagram,
 } from "react-icons/ai";
+import { SiTelegram } from "react-icons/si";
 
 
 const About = () => {
@@ -77,6 +78,17 @@ const About = () => {
                   aria-label="github"
                 >
                   <AiFillGithub />
+                </a>
+              </li>
+              <li className="social-icons">
+                <a
+                  href="https://t.me/Tuit_ki_student"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour  home-social-icons"
+                  aria-label="github"
+                >
+                  <SiTelegram />
                 </a>
               </li>
               <li className="social-icons">

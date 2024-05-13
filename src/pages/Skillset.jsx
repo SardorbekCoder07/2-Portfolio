@@ -23,7 +23,6 @@ const Skillset = () => {
         <Toolstack />
 
         <Leetcode />
-        {/* <Github /> */}
       </Container>
     </Container>
   )
