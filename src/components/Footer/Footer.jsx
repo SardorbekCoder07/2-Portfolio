@@ -13,7 +13,7 @@ const Footer = () => {
 					<span>Thank you for your attention</span>
 				</Col>
 				<Col md="4" className="footer-copywright">
-					<span>Sardorbek Sayfullayev {year}</span>
+					<span>Sardorbek Sayfullayev {year} /span>
 				</Col>
 				<Col md="4" className="footer-body">
 					<ul className="footer-icons">
