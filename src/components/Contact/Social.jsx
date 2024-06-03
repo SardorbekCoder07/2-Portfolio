@@ -27,6 +27,7 @@ const Social = () => {
                       className="icon-color  contact-social-icons"
                     >
                       <AiFillGithub />
+                      
                     </a>
                   </li>
                   <li className="contact-icons">
